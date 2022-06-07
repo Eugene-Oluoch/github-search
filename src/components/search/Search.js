@@ -18,7 +18,7 @@ let Search = ({userSet})=>{
 
     let formik = useFormik({
         initialValues:{
-            username:'eugene-oluoch'
+            username:''
         },
         onSubmit:values=>{
             axios.get(`https://api.github.com/users/${values.username}`)
